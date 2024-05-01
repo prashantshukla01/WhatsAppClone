@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15202B"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:background="#15202B"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="WhatsApp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="44dp"
+            android:paddingRight="16dp"
+            android:drawableRight="@drawable/more_vert"
+            android:drawableLeft="@drawable/camera" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_white_rounded"
+        android:drawableLeft="@drawable/search_24"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:text="  Search..."
+        android:textColor="#C8C8C8">
+
+    </EditText>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="58dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/archive"
+            android:text=" Archived"
+            android:textColor="@color/white"
+            android:backgroundTint="#15202B"
+            android:textAlignment="textStart">
+
+        </Button>
+
+        <TextView
+            android:layout_width="412dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="488dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"/>
+
+
+
+
+
+
+</LinearLayout>
